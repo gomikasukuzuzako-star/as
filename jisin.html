@@ -77,13 +77,13 @@
     </script>
     <style>
     
-/* 🎫 テロップを上部に固定するCSS */
+/* 🎫 テロップを強制的に上部固定するCSS */
 .neon-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 999999 !important; /* 他の要素の裏に隠れないよう最前面に */
     overflow: hidden;
     background: rgba(10, 10, 25, 0.95);
     padding: 12px 0;
